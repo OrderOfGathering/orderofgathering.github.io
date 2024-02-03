@@ -1,0 +1,45 @@
+/*
+ * Copyright (c) Alix von Schirp 2023.
+ */
+
+:root {
+     --scroll-bg: rgba(30,30,30,30);
+     --scroll-color: rgba(50,50,50,30);
+ }
+
+main {
+    width: 95%;
+    max-width: 1800px;
+}
+
+#nav {
+    width: 95%;
+    max-width: 1800px;
+}
+
+button.nav-link {
+    color: rgba(255, 255, 255, 25);
+}
+
+:target {
+    border: 1px dotted #ccc;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--scroll-bg);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-color);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 5px solid transparent;  /* creates padding around scroll thumb */
+}
+
+body {
+    scrollbar-width: thin;          /* "auto" or "thin" */
+    scrollbar-color: var(--scroll-color) var(--scroll-bg);   /* scroll thumb and track */
+}
